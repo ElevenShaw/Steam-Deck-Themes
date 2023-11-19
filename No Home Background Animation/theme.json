@@ -1,0 +1,38 @@
+{
+    "name": "No Home Background Animation",
+    "author": "ElevenShaw",
+    "target": "Home",
+    "version": "v1.0",
+    "description": "This theme is to disable the animation style of the home backgoround image, and remove the filter and mask style for background",
+    "manifest_version": 5,
+    "inject": {},
+    "dependencies": {},
+    "patches": {
+        "No Background Animation": {
+            "type": "checkbox",
+            "default": "Yes",
+            "values": {
+                "Yes": {
+                    "no_background_animation.css": [
+                        "SP"
+                    ]
+                },
+                "No": {}
+            },
+            "components": []
+        },
+        "No Background Filter": {
+            "type": "checkbox",
+            "default": "No",
+            "values": {
+                "Yes": {
+                    "no_background_filter.css": [
+                        "SP"
+                    ]
+                },
+                "No": {}
+            },
+            "components": []
+        }
+    }
+}
